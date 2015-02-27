@@ -6,6 +6,9 @@ fresh freshshell/fresh contrib/completion/fresh-completion.bash
 # Brewfile
 fresh Brewfile --file=~/Brewfile
 
+# SSH
+fresh ssh_config --file=~/.ssh/config
+
 install_brew(){
   if [ "$(uname)" == "Darwin" ] && ! which brew &> /dev/null; then
     echo 'Installing brew'
